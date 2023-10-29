@@ -1,0 +1,215 @@
+<style>
+:root{
+	margin: 0;
+	padding: 0;
+	font-family: roboto, monospace;
+}
+html,body{
+	height: 100%;
+}
+body{
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+}
+.card{
+	box-shadow: 0 2px 4px rgb(0 0 0 / 0.1); 
+	border-radius: 0.25rem; width: 300px; 
+	height: auto; 
+	margin: 1rem;
+
+	display: flex;
+	border: 1px solid lightgrey; 
+}
+.card .card__profile{ 
+	padding: 1rem; 
+	background-color: rgb(245, 245, 245); 
+	border-top-left-radius: 0.25rem; 
+	border-bottom-left-radius: 0.25rem;
+
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: start; 
+}
+
+.card .card__content{ 
+	padding: 1rem; 
+	background-color: white; 
+	align-items: center;
+	border-top-right-radius: 0.25rem; 
+	border-bottom-right-radius: 0.25rem; 
+	width: 100%; 
+}
+.card .card__profile .profile-container{ 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%; 
+	background-color: darkgrey;  
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.card .card__profile .profile-container > div{ 
+	color: white;  
+}
+
+.card .card__content .user{  
+	font-weight: bolder; 
+}
+
+.card .card__content hr{ 
+	border: 1px solid rgb(245, 245, 245); 
+}  
+
+.card .card__content .comment{ 
+	font-size: small; 
+}
+
+.skeleton-card{ 
+	box-shadow: 0 2px 4px rgb(0 0 0 / 0.1); 
+	border-radius: 0.25rem; 
+	width: 300px; 
+	align-items: center;
+	height: auto; 
+	margin: 1rem;   
+	display: flex; 
+	border: 1px solid lightgrey; 
+}  
+.skeleton-card .card__profile{ 
+	padding: 1rem; 
+	background-color: rgb(245, 245, 245); 
+	border-top-left-radius: 0.25rem; 
+	border-bottom-left-radius: 0.25rem;  
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: start; 
+}  
+.skeleton-card .card__content{ 
+	padding: 1rem; 
+	background-color: white; 
+	border-top-right-radius: 0.25rem; 
+	align-items: center;
+
+	border-bottom-right-radius: 0.25rem; 
+	width: 100%; 
+}  
+.skeleton-card .card__profile .profile-container{ 
+	width: 40px; 
+	height: 40px; 
+	border-radius: 50%; 
+	background-color: lightgrey;  
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}  
+.skeleton-card .card__profile .profile-container > div{ 
+	color: white;  
+}  
+.skeleton-card .card__content .user > div{ 
+	height: 10px; 
+	background-color: lightgrey; 
+	width: 35%;
+}  
+.skeleton-card .card__content hr{
+ border: 1px solid rgb(245, 245, 245);
+}  
+.skeleton-card .card__content .comment{ 
+	font-size: small; 
+}  
+.skeleton-card .card__content .comment > div{ 
+	margin-bottom: 0.5rem;
+} 
+.skeleton-card .card__content .comment > div:first-child{ 
+	height: 10px; 
+	background-color: lightgrey; 
+}  
+.skeleton-card .card__content .comment > div:nth-child(2){ 
+	height: 10px; 
+	width: 65%; 
+	background-color: lightgrey; 
+}  
+.skeleton-card .card__content .comment > div:last-child{ 
+	height: 10px; 
+	width: 80%; 
+	align-items: center;
+	background-color: lightgrey; 
+}  
+.skeleton-card .card__content div{ 
+	border-radius: 0.25rem; 
+}  
+.skeleton-animation{ 
+	animation: skeletonLoadAnimate 1.5s ease-in-out; 
+	animation-direction: alternate; 
+	animation-iteration-count: infinite; 
+} 
+@keyframes skeletonLoadAnimate{  
+
+0%{ 
+	background-color: rgb(235, 235, 235);
+}  
+
+50%{ 
+	background-color: rgb(215, 215, 215); 
+}  
+
+100%{ background-color: rgb(235, 235, 235);
+} 
+}   
+
+section:last-child{ 
+	border: 1px red solid;  
+
+} 
+ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Style the icon elements */
+.fa-brands {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
